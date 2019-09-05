@@ -23,11 +23,10 @@ add lib/react-auth0-wrapper.js
 yarn add axios @auth0/auth0-spa-js
 
 add next.config.js
+add login / signup button
 
 TODO
 ===
-
-add login / signup button
 
 signup test user
 login test user
