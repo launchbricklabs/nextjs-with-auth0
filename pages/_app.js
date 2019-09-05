@@ -1,6 +1,6 @@
 import React from "react";
 import App, { Container as NextContainer } from "next/app";
-import { Auth0Provider, Auth0Context } from "../lib/react-auth0-wrapper";
+import { Auth0Provider, Auth0Context } from "../lib/react-auth0";
 
 const onRedirectCallback = appState => {
   window.history.replaceState(
@@ -20,7 +20,7 @@ class MyApp extends App {
       <Auth0Provider
         domain={process.env.AUTH0_DOMAIN}
         client_id={process.env.AUTH0_CLIENT_ID}
-        redirect_uri="http://localhost:3000/profile"
+        redirect_uri="http://localhost:3000"
         onRedirectCallback={onRedirectCallback}
       >
         <Auth0Context.Consumer>
