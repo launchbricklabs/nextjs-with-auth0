@@ -24,12 +24,11 @@ yarn add axios @auth0/auth0-spa-js
 
 add next.config.js
 add login / signup button
+signup test user
+login test user
 
 TODO
 ===
-
-signup test user
-login test user
 
 Authenticate and view private web page
 ---
